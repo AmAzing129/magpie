@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#1213 界面预览 · 094c1a7</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#1213 界面预览</h1><p class="m">commit 094c1a7 · <a href="https://github.com/yetone/magpie/pull/1213">回到 PR</a> · 只改了 app.js 里页面滚动的归属判断：在页面右侧滚动条带内按下鼠标时把整段拖动记作读者自己滚动，松手后再续 250ms 读者窗口，并在拖动期间跳过点击后的「保持」、pinSizes 回拉和 Routing 页的占位保持。页面的外观、文案和布局都没有变化。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-gateway-top.png" alt="网关页顶部：模型列表从 group/coding 开始"><figcaption>网关页：页面自身的滚动位置 · 网关页顶部：模型列表从 group/coding 开始</figcaption></figure>
+<figure><img src="02-gateway-scrolled.png" alt="滚动之后：页面停在列表下方的 deepseek/deepseek-v4-pro 附近"><figcaption>网关页：页面自身的滚动位置 · 滚动之后：页面停在列表下方的 deepseek/deepseek-v4-pro 附近</figcaption></figure>
+<figure><img src="03-usage-top.png" alt="用量页顶部：额度卡片在屏幕内"><figcaption>用量页：滚动到底部的内容 · 用量页顶部：额度卡片在屏幕内</figcaption></figure>
+<figure><img src="04-usage-scrolled.png" alt="滚动之后：页面停在模型统计列表处"><figcaption>用量页：滚动到底部的内容 · 滚动之后：页面停在模型统计列表处</figcaption></figure>
+</main></html>

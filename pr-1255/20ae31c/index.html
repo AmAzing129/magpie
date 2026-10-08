@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#1255 界面预览 · 20ae31c</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#1255 界面预览</h1><p class="m">commit 20ae31c · <a href="https://github.com/yetone/magpie/pull/1255">回到 PR</a> · 这次改动只动 macOS 外壳行为：主窗口被激活（例如点 Dock 图标）时不再被搬到当前桌面，只有隐藏/关闭后重新打开的窗口才跟随当前 Space；网页界面本身没有增删任何元素。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-panel-open-button.png" alt="面板右上角的「在窗口中打开」"><figcaption>主窗口的打开入口 · 面板右上角的「在窗口中打开」</figcaption></figure>
+<figure><img src="02-panel-open-hover.png" alt="悬停时的提示与按钮状态"><figcaption>主窗口的打开入口 · 悬停时的提示与按钮状态</figcaption></figure>
+<figure><img src="03-panel-open-main.png" alt="面板底部的「打开 magpie」，与上面的按钮请求同一件事"><figcaption>主窗口的打开入口 · 面板底部的「打开 magpie」，与上面的按钮请求同一件事</figcaption></figure>
+</main></html>

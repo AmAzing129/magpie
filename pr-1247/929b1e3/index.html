@@ -1,0 +1,18 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#1247 界面预览 · 929b1e3</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#1247 界面预览</h1><p class="m">commit 929b1e3 · <a href="https://github.com/yetone/magpie/pull/1247">回到 PR</a> · 路由页请求列表上方的用途筛选，从只能选一个用途改成带复选框的多选菜单：每勾选一个用途就立刻把列表、计数、当前故事、历史与会话分组收窄到所选用途的并集，菜单保持打开；清除筛选或取消最后一个用途即恢复全部请求（用量页的用途选择仍是单选，未改动）。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-routing-past-day.png" alt="历史某一天的请求列表与标题栏"><figcaption>用途筛选：单选改成多选复选框 · 历史某一天的请求列表与标题栏</figcaption></figure>
+<figure><img src="02-routing-request-head.png" alt="路由页请求列表上方的标题栏"><figcaption>用途筛选：单选改成多选复选框 · 路由页请求列表上方的标题栏</figcaption></figure>
+<figure><img src="03-history-day-list.png" alt="历史某天的请求列表和上方的用途筛选处"><figcaption>用途筛选：单选改成多选复选框 · 历史某天的请求列表和上方的用途筛选处</figcaption></figure>
+<figure><img src="04-filtered-today.png" alt="两个用途勾选后的当天列表与计数"><figcaption>多选筛选跨日期与会话分组 · 两个用途勾选后的当天列表与计数</figcaption></figure>
+<figure><img src="05-filtered-history-day.png" alt="另一天的请求列表、计数与标题栏上的用途名"><figcaption>多选筛选跨日期与会话分组 · 另一天的请求列表、计数与标题栏上的用途名</figcaption></figure>
+<figure><img src="06-grouped-sessions.png" alt="按会话分组后的会话与计数"><figcaption>多选筛选跨日期与会话分组 · 按会话分组后的会话与计数</figcaption></figure>
+<figure><img src="07-cleared-filter.png" alt="清除筛选后的列表与会话分组"><figcaption>多选筛选跨日期与会话分组 · 清除筛选后的列表与会话分组</figcaption></figure>
+</main></html>

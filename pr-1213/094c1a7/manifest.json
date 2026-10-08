@@ -1,0 +1,44 @@
+{
+  "summary": "只改了 app.js 里页面滚动的归属判断：在页面右侧滚动条带内按下鼠标时把整段拖动记作读者自己滚动，松手后再续 250ms 读者窗口，并在拖动期间跳过点击后的「保持」、pinSizes 回拉和 Routing 页的占位保持。页面的外观、文案和布局都没有变化。",
+  "scenes": [
+    {
+      "title": "网关页：页面自身的滚动位置",
+      "shots": [
+        {
+          "file": "01-gateway-top.png",
+          "caption": "网关页顶部：模型列表从 group/coding 开始",
+          "width": 2560
+        },
+        {
+          "file": "02-gateway-scrolled.png",
+          "caption": "滚动之后：页面停在列表下方的 deepseek/deepseek-v4-pro 附近",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "用量页：滚动到底部的内容",
+      "shots": [
+        {
+          "file": "03-usage-top.png",
+          "caption": "用量页顶部：额度卡片在屏幕内",
+          "width": 2560
+        },
+        {
+          "file": "04-usage-scrolled.png",
+          "caption": "滚动之后：页面停在模型统计列表处",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "描述里「改了什么」第 3 条说 routing.js 的 steady() 改为通过新增的 window.readerScrolling() 先问一句「读者是否正在滚动」，但 diff 里没有 routing.js 的改动，也没有 window.readerScrolling 这个函数，只有 app.js 的 barDrag。",
+  "unseen": "这个改动只在用鼠标按住页面右侧滚动条的滑块往下拖时才看得出来，录屏可用的动作里没有拖动（只有点击、悬停、输入、滚动、截图），所以只能展示改动生效的页面滚动后的位置，拖滚动条本身的行为无法在画面里演示。",
+  "interactive": true,
+  "pages": 2
+}

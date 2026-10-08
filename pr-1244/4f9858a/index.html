@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#1244 界面预览 · 4f9858a</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#1244 界面预览</h1><p class="m">commit 4f9858a · <a href="https://github.com/yetone/magpie/pull/1244">回到 PR</a> · 这个 diff 只在 i18n.js 里为 zh、zh-TW、ja、de 各加了一条词条：当插件把「Gift plans to claim in the ZCode app」这句英文当作额度窗口的名字送来时，卡片上的名字会随界面语言翻译，而窗口自己的 display（数量和套餐名）仍按原样显示。界面结构、CSS、交互都没有改，测试和 README 是附带的。</p>
+<figure><video src="preview.mp4" controls autoplay muted playsinline poster="poster.png"></video><figcaption>红线是鼠标走过的轨迹，红色圆环是一次点击；底部文字是这一步在做什么。空格暂停，← → 逐段查看。</figcaption></figure>
+<figure><img src="01-usage-allowance-cards.png" alt="用量页的额度卡片：插件送来的额度窗口就显示在这种卡片里"><figcaption>用量页的额度卡片——领取提示行会出现的地方 · 用量页的额度卡片：插件送来的额度窗口就显示在这种卡片里</figcaption></figure>
+<figure><img src="02-usage-quota-labels.png" alt="一个账号的额度窗口：左边是窗口名，右边是它自己的数值"><figcaption>用量页的额度卡片——领取提示行会出现的地方 · 一个账号的额度窗口：左边是窗口名，右边是它自己的数值</figcaption></figure>
+<figure><img src="03-settings-language-options.png" alt="设置 › 常规的语言选项：这次的词条就是给这里的简体中文、繁體中文、日本語、Deutsch 加的"><figcaption>设置里的语言选项 · 设置 › 常规的语言选项：这次的词条就是给这里的简体中文、繁體中文、日本語、Deutsch 加的</figcaption></figure>
+</main></html>

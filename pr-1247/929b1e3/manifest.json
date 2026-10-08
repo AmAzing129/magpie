@@ -1,0 +1,67 @@
+{
+  "summary": "路由页请求列表上方的用途筛选，从只能选一个用途改成带复选框的多选菜单：每勾选一个用途就立刻把列表、计数、当前故事、历史与会话分组收窄到所选用途的并集，菜单保持打开；清除筛选或取消最后一个用途即恢复全部请求（用量页的用途选择仍是单选，未改动）。",
+  "scenes": [
+    {
+      "title": "用途筛选：单选改成多选复选框",
+      "shots": [
+        {
+          "file": "01-routing-past-day.png",
+          "caption": "历史某一天的请求列表与标题栏",
+          "width": 2560
+        },
+        {
+          "file": "02-routing-request-head.png",
+          "caption": "路由页请求列表上方的标题栏",
+          "width": 2560
+        },
+        {
+          "file": "03-history-day-list.png",
+          "caption": "历史某天的请求列表和上方的用途筛选处",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "多选筛选跨日期与会话分组",
+      "shots": [
+        {
+          "file": "04-filtered-today.png",
+          "caption": "两个用途勾选后的当天列表与计数",
+          "width": 2560
+        },
+        {
+          "file": "05-filtered-history-day.png",
+          "caption": "另一天的请求列表、计数与标题栏上的用途名",
+          "width": 2560
+        },
+        {
+          "file": "06-grouped-sessions.png",
+          "caption": "按会话分组后的会话与计数",
+          "width": 2560
+        },
+        {
+          "file": "07-cleared-filter.png",
+          "caption": "清除筛选后的列表与会话分组",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [
+    "用途筛选：单选改成多选复选框 · click #rtPurpose: nothing visible matches #rtPurpose (1 in the page)",
+    "用途筛选：单选改成多选复选框 · click #rtPurpose: nothing visible matches #rtPurpose (1 in the page)",
+    "用途筛选：单选改成多选复选框 · click #rtPurpose: nothing visible matches #rtPurpose (1 in the page)",
+    "多选筛选跨日期与会话分组 · click #rtPurpose: nothing visible matches #rtPurpose (1 in the page)",
+    "多选筛选跨日期与会话分组 · click .rt-purpose-menu .pm-item + .pm-item: nothing visible matches .rt-purpose-menu .pm-item + .pm-item (0 in the page)",
+    "多选筛选跨日期与会话分组 · click .rt-purpose-menu .pm-item + .pm-item + .pm-item: nothing visible matches .rt-purpose-menu .pm-item + .pm-item + .pm-item (0 in the page)",
+    "多选筛选跨日期与会话分组 · click #rtPurposeClear: nothing visible matches #rtPurposeClear (1 in the page)"
+  ],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "菜单里的复选框数量取决于沙盒里路由请求实际出现的用途种类：如果种子数据的请求只落在一种用途上，筛选按钮本身不会显示，这一改动就看不出；键盘在复选框上按空格/回车切换，以及 WebKit 下菜单重绘被钳制滚动时保持打开的修复，都是输入法/引擎层面的行为，截图里看不出来；从别的页面打开一条被排除的请求会清空筛选这一点也不在画面里。",
+  "interactive": true,
+  "pages": 1
+}

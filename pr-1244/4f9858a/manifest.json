@@ -1,0 +1,39 @@
+{
+  "summary": "这个 diff 只在 i18n.js 里为 zh、zh-TW、ja、de 各加了一条词条：当插件把「Gift plans to claim in the ZCode app」这句英文当作额度窗口的名字送来时，卡片上的名字会随界面语言翻译，而窗口自己的 display（数量和套餐名）仍按原样显示。界面结构、CSS、交互都没有改，测试和 README 是附带的。",
+  "scenes": [
+    {
+      "title": "用量页的额度卡片——领取提示行会出现的地方",
+      "shots": [
+        {
+          "file": "01-usage-allowance-cards.png",
+          "caption": "用量页的额度卡片：插件送来的额度窗口就显示在这种卡片里",
+          "width": 2560
+        },
+        {
+          "file": "02-usage-quota-labels.png",
+          "caption": "一个账号的额度窗口：左边是窗口名，右边是它自己的数值",
+          "width": 1120
+        }
+      ]
+    },
+    {
+      "title": "设置里的语言选项",
+      "shots": [
+        {
+          "file": "03-settings-language-options.png",
+          "caption": "设置 › 常规的语言选项：这次的词条就是给这里的简体中文、繁體中文、日本語、Deutsch 加的",
+          "width": 1120
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "描述里的四语言对照表与 diff 实际写入的词条不一致（例如 zh：描述写「有赠送额度待领取 · 请在 ZCode 客户端领取」，diff 里是「待在 ZCode 客户端领取的赠送额度」；zh-TW、ja、de 同样对不上），diff 里的测试 fixture 用的是 diff 的写法。描述还说「插件现在把整句作为窗口名、把数量和套餐名作为 display」，那是 plugins#43 里插件侧的改动，本 diff 没有包含，它只加了 magpie 一侧的词条和测试。",
+  "unseen": "沙盒里没有 ZCode 供应商，也没有带「赠送待领取」窗口的账号：用量页的额度卡片只有 Codex、DeepSeek、Sub2API Relay，所以这条译文在运行中的界面里看不到效果，只有插件送来那个窗口名之后才会出现。它会显示成什么样子只能在测试 fixture（quota-name-translated.test.cjs 里的「1 · ZCode Trust Build」）里看到，不在界面上。",
+  "interactive": false,
+  "pages": 2
+}

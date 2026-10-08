@@ -1,0 +1,49 @@
+{
+  "summary": "PR 让会话子系统把本机的 Reasonix 会话读进列表：会话列表/统计里会多出 Reasonix 的会话与模型，会话行在只有部分本地用量时显示「用量历史不完整」，会话详情顶部多一行说明；当存在读不了的 Reasonix 存储时，列表的统计行与底部说明改为显示兼容性提示。",
+  "scenes": [
+    {
+      "title": "用量 › 会话列表",
+      "shots": [
+        {
+          "file": "01-sessions-tab.png",
+          "caption": "用量 › 会话：会话列表与上方的 Agent 筛选条",
+          "width": 2560
+        },
+        {
+          "file": "02-sessions-all-agents.png",
+          "caption": "筛「全部」后的会话列表与统计行",
+          "width": 2560
+        }
+      ]
+    },
+    {
+      "title": "会话详情与对话",
+      "shots": [
+        {
+          "file": "03-sessions-view.png",
+          "caption": "会话：本机找到的会话列表",
+          "width": 2560
+        },
+        {
+          "file": "04-session-detail.png",
+          "caption": "会话详情面板",
+          "width": 2560
+        },
+        {
+          "file": "05-session-talk.png",
+          "caption": "会话内容面板",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "沙盒机器没有 Reasonix 的会话存储（没有 ~/.reasonix 下的会话目录、events.frames 或 wire/telemetry 侧车），所以本次新增的界面内容都无法真实出现：会话列表里的 Reasonix 会话与它的模型、会话行上的「用量历史不完整」小字、会话详情顶部「仅统计现存的本地用量记录，缺失的历史记录无法计入。」，以及 #sessStats / #sessNote 上「有 N 个 Reasonix 会话存储存在无法读取或未知的数据」的提示。录像只展示这些内容所在的位置（用量 › 会话列表、会话详情、会话内容）。",
+  "interactive": true,
+  "pages": 2
+}

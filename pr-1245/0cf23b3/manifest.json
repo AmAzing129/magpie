@@ -1,0 +1,24 @@
+{
+  "summary": "「用量」页额度卡片在遇到“ZCode 账号已无 GLM Coding Plan、免费体验套餐也已结束”这一读取结果时，不再显示「暂时无法获取额度」，而是显示一句说明没有可用额度、需订阅 GLM Coding Plan 的新文案（中文、繁体、日文、德文均已翻译）；真正的“读取失败”仍保持原文案。",
+  "scenes": [
+    {
+      "title": "额度卡片区：提示文字所在的位置",
+      "shots": [
+        {
+          "file": "01-usage-allowance-cards.png",
+          "caption": "额度卡片区：每个账号一张卡片，卡片上的文字就是额度状态",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "沙盒里只有 Codex（两个 ChatGPT 账号）、DeepSeek、Sub2API Relay、Acme Cloud，没有任何 ZCode 账号，因此无法让「额度已用完的 ZCode 账号」这张卡片真实出现，看不到新文案本身；只能展示该文案所在的额度卡片区，以及卡片文字/悬停提示的位置。",
+  "interactive": true,
+  "pages": 1
+}

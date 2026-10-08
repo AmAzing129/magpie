@@ -1,0 +1,34 @@
+{
+  "summary": "这次改动只动 macOS 外壳行为：主窗口被激活（例如点 Dock 图标）时不再被搬到当前桌面，只有隐藏/关闭后重新打开的窗口才跟随当前 Space；网页界面本身没有增删任何元素。",
+  "scenes": [
+    {
+      "title": "主窗口的打开入口",
+      "shots": [
+        {
+          "file": "01-panel-open-button.png",
+          "caption": "面板右上角的「在窗口中打开」",
+          "width": 1120
+        },
+        {
+          "file": "02-panel-open-hover.png",
+          "caption": "悬停时的提示与按钮状态",
+          "width": 1120
+        },
+        {
+          "file": "03-panel-open-main.png",
+          "caption": "面板底部的「打开 magpie」，与上面的按钮请求同一件事",
+          "width": 1120
+        }
+      ]
+    }
+  ],
+  "video": "preview.mp4",
+  "poster": "poster.png",
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "这是 macOS 多桌面（Space）上的窗口行为：沙盒里 magpie 跑在 1280x800 的浏览器中，只有一个页面，无法复现点 Dock 图标后窗口留在原桌面、隐藏窗口重开落到当前桌面、以及 lightweight 重建后的差别，全屏与最小化路径同样无法在此演示。下面只能展示会走到这条打开路径的界面入口。",
+  "interactive": true,
+  "pages": 1
+}
